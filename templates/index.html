@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Sample</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/static/img/back1.jpg'); /* Adjust the path accordingly */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .form-container {
+            background-color: rgba(255, 200, 255, 0.8);
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        /* Style for the clickable text */
+        #getLocationBtn {
+            color: #45a049; /* Change the color to blue */
+            text-decoration: underline; /* Underline the text */
+            cursor: pointer; /* Change cursor to pointer to indicate clickable */
+        }
+
+        .my-button:hover {
+            background-color: #45a049;
+        }
+
+        .h1{
+            font-size: 18px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to 1-Bus!</h1>
+        <h2>What is 1-Bus?</h2>
+        1-Bus is a tool to help you find a Place of Interest (POI) that only requires one bus
+        for you to get to! <br>
+        Enter a bus number closest to you to get started.
+
+        <!-- <button class = "my-button" type="submit">Find a bus near me</button> -->
+    
+        <!-- <button class = "my-button" id="getLocationBtn">Find a Bus/ Bus Stop near me !</button> -->
+        <h3>Not sure what buses are near you? Click <span id="getLocationBtn">here</span> to find out!</h3>
+
+        <script src="{{ url_for('static', filename='location.js') }}" defer></script>
+
+        
+
+        <!-- For user to POST their bus number -->
+        <form method="POST">
+            <label for="user_input">Enter a bus number: </label>
+            <input type="number" id="user_input" name="user_input" required>
+                <button type="submit">Enter</button>
+        </form>
+
+        <!-- Form for getting Updates -->
+        <div class="form-container">
+            <!-- For user to GET the updates -->
+            <form action="{{ url_for('updates') }}" method="get">
+                <button type="submit">Website Updates</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

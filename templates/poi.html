@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Flask Bus POI Finder App</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+
+    <h1>Points of Interest (POI) Information</h1>
+    <!-- Other content specific to the POI page -->
+
+    
+    <body>
+        {% include "map.html" %}
+    
+    </body> 
+
+    <!-- back button -->
+    <a href="/"><button>Back</button></a>
+    <!-- <script src="{{ url_for('static', filename='script.js') }}"></script> -->
+</body>
+</html>

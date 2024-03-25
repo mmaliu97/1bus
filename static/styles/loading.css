@@ -1,0 +1,25 @@
+#loading-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+div#submission {
+    width: 250px;
+    height: 250px;
+    /* display: none; */
+    display: block;
+    background-color: black;
+    background: url(/static/yuB.gif) no-repeat;
+    cursor: wait;
+    }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

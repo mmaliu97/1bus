@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_773f940a78dd682fcde87337155985c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_773f940a78dd682fcde87337155985c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_773f940a78dd682fcde87337155985c2 = L.map(
+                "map_773f940a78dd682fcde87337155985c2",
+                {
+                    center: [30.363467, -97.728784],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc7849a77bd059a8407979df6fe5113c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var marker_4caf24bb1067c1fa2d53ac38e44ac40a = L.marker(
+                [30.363467, -97.728784],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_76934d58afc1936f1c8a61562405b97f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4caf24bb1067c1fa2d53ac38e44ac40a.setIcon(icon_76934d58afc1936f1c8a61562405b97f);
+        
+    
+        var popup_11abe1e4846e1b0daa481fa46d8aefbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f332d24dc8ca8b0443d1543ff003d6d = $(`<div id="html_7f332d24dc8ca8b0443d1543ff003d6d" style="width: 100.0%; height: 100.0%;">Home</div>`)[0];
+                popup_11abe1e4846e1b0daa481fa46d8aefbc.setContent(html_7f332d24dc8ca8b0443d1543ff003d6d);
+            
+        
+
+        marker_4caf24bb1067c1fa2d53ac38e44ac40a.bindPopup(popup_11abe1e4846e1b0daa481fa46d8aefbc)
+        ;
+
+        
+    
+    
+            var marker_60253e98c9c84501d5d252088ecf05a1 = L.marker(
+                [30.3654581, -97.7289338],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_a05879d7efc2a608d9274176ebeebf98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_60253e98c9c84501d5d252088ecf05a1.setIcon(icon_a05879d7efc2a608d9274176ebeebf98);
+        
+    
+        var popup_2f82c406745f5973000b684e1326dbac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac0b27b26a2e0e8af202a55f4eac19b9 = $(`<div id="html_ac0b27b26a2e0e8af202a55f4eac19b9" style="width: 100.0%; height: 100.0%;">Closest bus stop: Ohlen Station (NB).<br>Name of POI: Sarovar.<br>Type of POI: restaurant.<br>Bus journey: 0.0.</div>`)[0];
+                popup_2f82c406745f5973000b684e1326dbac.setContent(html_ac0b27b26a2e0e8af202a55f4eac19b9);
+            
+        
+
+        marker_60253e98c9c84501d5d252088ecf05a1.bindPopup(popup_2f82c406745f5973000b684e1326dbac)
+        ;
+
+        
+    
+    
+            var marker_3b8eba127ed6f21a194c76daf92428f6 = L.marker(
+                [30.3632541, -97.7285134],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_6937b2fffabe90cb9893bc372d0fe81b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_3b8eba127ed6f21a194c76daf92428f6.setIcon(icon_6937b2fffabe90cb9893bc372d0fe81b);
+        
+    
+        var popup_25bec1412ceedc2a46aa68a0eaa1a961 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c072fa6bebcb0a5350caecaed630c549 = $(`<div id="html_c072fa6bebcb0a5350caecaed630c549" style="width: 100.0%; height: 100.0%;">Closest bus stop: Ohlen Station (NB).<br>Name of POI: Shu Shu's.<br>Type of POI: restaurant.<br>Bus journey: 0.0.</div>`)[0];
+                popup_25bec1412ceedc2a46aa68a0eaa1a961.setContent(html_c072fa6bebcb0a5350caecaed630c549);
+            
+        
+
+        marker_3b8eba127ed6f21a194c76daf92428f6.bindPopup(popup_25bec1412ceedc2a46aa68a0eaa1a961)
+        ;
+
+        
+    
+    
+            var marker_28e82ad08f50185548036a039b6f0167 = L.marker(
+                [30.3654581, -97.7289338],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_87e8dd155b17e4150e63f3414f08ff4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_28e82ad08f50185548036a039b6f0167.setIcon(icon_87e8dd155b17e4150e63f3414f08ff4b);
+        
+    
+        var popup_000865594fa78537670d7ab81972722d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2552ed43ae1a4a1f3991a87ffec0b11e = $(`<div id="html_2552ed43ae1a4a1f3991a87ffec0b11e" style="width: 100.0%; height: 100.0%;">Closest bus stop: Burnet/Colfax.<br>Name of POI: Sarovar.<br>Type of POI: restaurant.<br>Bus journey: 1.3.</div>`)[0];
+                popup_000865594fa78537670d7ab81972722d.setContent(html_2552ed43ae1a4a1f3991a87ffec0b11e);
+            
+        
+
+        marker_28e82ad08f50185548036a039b6f0167.bindPopup(popup_000865594fa78537670d7ab81972722d)
+        ;
+
+        
+    
+    
+            var marker_99a0c10318950c251dcda455ee90705c = L.marker(
+                [30.367959639893407, -97.7282020321292],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_d2cd03baeb824353a1d4fa6bd310c337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_99a0c10318950c251dcda455ee90705c.setIcon(icon_d2cd03baeb824353a1d4fa6bd310c337);
+        
+    
+        var popup_695a73b2ec42c8965cb3473fcf838a98 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f8490f7c90fb273f04c2db022feeed40 = $(`<div id="html_f8490f7c90fb273f04c2db022feeed40" style="width: 100.0%; height: 100.0%;">Closest bus stop: Burnet/Colfax.<br>Name of POI: Waterloo Icehouse.<br>Type of POI: restaurant.<br>Bus journey: 1.3.</div>`)[0];
+                popup_695a73b2ec42c8965cb3473fcf838a98.setContent(html_f8490f7c90fb273f04c2db022feeed40);
+            
+        
+
+        marker_99a0c10318950c251dcda455ee90705c.bindPopup(popup_695a73b2ec42c8965cb3473fcf838a98)
+        ;
+
+        
+    
+    
+            var marker_9c4dff20726955e70efea926dc4fc514 = L.marker(
+                [30.3723167, -97.7271869],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_47be38d7977d65f257b3161a1cbcd8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_9c4dff20726955e70efea926dc4fc514.setIcon(icon_47be38d7977d65f257b3161a1cbcd8ed);
+        
+    
+        var popup_ec420969c10ac5bd92d20054f6a82341 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b174e538bb219f05297bdfbed79a8f0f = $(`<div id="html_b174e538bb219f05297bdfbed79a8f0f" style="width: 100.0%; height: 100.0%;">Closest bus stop: Crossroads Station (NB).<br>Name of POI: Chili's.<br>Type of POI: restaurant.<br>Bus journey: 2.35.</div>`)[0];
+                popup_ec420969c10ac5bd92d20054f6a82341.setContent(html_b174e538bb219f05297bdfbed79a8f0f);
+            
+        
+
+        marker_9c4dff20726955e70efea926dc4fc514.bindPopup(popup_ec420969c10ac5bd92d20054f6a82341)
+        ;
+
+        
+    
+    
+            var marker_f0fe09718b5454f27a30c62a3d4c84d5 = L.marker(
+                [30.3715088, -97.7245372],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_1ad32fb9a31b4e5f04a580162aff0bd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_f0fe09718b5454f27a30c62a3d4c84d5.setIcon(icon_1ad32fb9a31b4e5f04a580162aff0bd7);
+        
+    
+        var popup_29041cc007ead00e92a6db8e63792c59 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ec1e8b1dc22c071ac1f9bcecc709ec3 = $(`<div id="html_9ec1e8b1dc22c071ac1f9bcecc709ec3" style="width: 100.0%; height: 100.0%;">Closest bus stop: Crossroads Station (NB).<br>Name of POI: Emerald Tavern Games.<br>Type of POI: cafe.<br>Bus journey: 2.35.</div>`)[0];
+                popup_29041cc007ead00e92a6db8e63792c59.setContent(html_9ec1e8b1dc22c071ac1f9bcecc709ec3);
+            
+        
+
+        marker_f0fe09718b5454f27a30c62a3d4c84d5.bindPopup(popup_29041cc007ead00e92a6db8e63792c59)
+        ;
+
+        
+    
+    
+            var marker_1e7b4ef84f7a04c3c630345efa69f69b = L.marker(
+                [30.3711681, -97.7247135],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_53be34aa996f2c50c378a68459c722fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_1e7b4ef84f7a04c3c630345efa69f69b.setIcon(icon_53be34aa996f2c50c378a68459c722fd);
+        
+    
+        var popup_254b997c7c490f0bb7f7d0590e15ba2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc73b8ca1a0650a706ec48cbdb61572c = $(`<div id="html_bc73b8ca1a0650a706ec48cbdb61572c" style="width: 100.0%; height: 100.0%;">Closest bus stop: Crossroads Station (NB).<br>Name of POI: Nissi Vegan Méxican Cuisine.<br>Type of POI: restaurant.<br>Bus journey: 2.35.</div>`)[0];
+                popup_254b997c7c490f0bb7f7d0590e15ba2a.setContent(html_bc73b8ca1a0650a706ec48cbdb61572c);
+            
+        
+
+        marker_1e7b4ef84f7a04c3c630345efa69f69b.bindPopup(popup_254b997c7c490f0bb7f7d0590e15ba2a)
+        ;
+
+        
+    
+    
+            var marker_9b10d37fcf3b6259c2ba7e1cfebaf6b4 = L.marker(
+                [30.37061990610817, -97.7276050388528],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_8639e506b1a198ac11c9513d2235cccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_9b10d37fcf3b6259c2ba7e1cfebaf6b4.setIcon(icon_8639e506b1a198ac11c9513d2235cccf);
+        
+    
+        var popup_9da18b60d6522c5362f98f7c3301bf3e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af35f141ca8bfe528b7335fa1c7d1451 = $(`<div id="html_af35f141ca8bfe528b7335fa1c7d1451" style="width: 100.0%; height: 100.0%;">Closest bus stop: Crossroads Station (NB).<br>Name of POI: Trudy's.<br>Type of POI: restaurant.<br>Bus journey: 2.35.</div>`)[0];
+                popup_9da18b60d6522c5362f98f7c3301bf3e.setContent(html_af35f141ca8bfe528b7335fa1c7d1451);
+            
+        
+
+        marker_9b10d37fcf3b6259c2ba7e1cfebaf6b4.bindPopup(popup_9da18b60d6522c5362f98f7c3301bf3e)
+        ;
+
+        
+    
+    
+            var marker_bee07f0f344d259e060bd11c9743f5eb = L.marker(
+                [30.3729305, -97.7241083],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_7a09ca51e24a810e822457374e53af13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_bee07f0f344d259e060bd11c9743f5eb.setIcon(icon_7a09ca51e24a810e822457374e53af13);
+        
+    
+        var popup_79caf3a0e6a722d1224140bef2416854 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4119495ac70171f28d1008c35ba1133 = $(`<div id="html_c4119495ac70171f28d1008c35ba1133" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9101 Burnet/Research.<br>Name of POI: Madras Pavilion.<br>Type of POI: restaurant.<br>Bus journey: 3.4833333333333334.</div>`)[0];
+                popup_79caf3a0e6a722d1224140bef2416854.setContent(html_c4119495ac70171f28d1008c35ba1133);
+            
+        
+
+        marker_bee07f0f344d259e060bd11c9743f5eb.bindPopup(popup_79caf3a0e6a722d1224140bef2416854)
+        ;
+
+        
+    
+    
+            var marker_8bfa536b9fe963866ac99e8e06accf3f = L.marker(
+                [30.3735916, -97.7254254],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_1cb6cbe69ab18ed2fba282c99c05e6d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_8bfa536b9fe963866ac99e8e06accf3f.setIcon(icon_1cb6cbe69ab18ed2fba282c99c05e6d6);
+        
+    
+        var popup_5aa2976a7329b70419dd00ac208f88ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6e64f7626067e2f3d2b2bd9343cba99 = $(`<div id="html_e6e64f7626067e2f3d2b2bd9343cba99" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9101 Burnet/Research.<br>Name of POI: Thai House.<br>Type of POI: restaurant.<br>Bus journey: 3.4833333333333334.</div>`)[0];
+                popup_5aa2976a7329b70419dd00ac208f88ab.setContent(html_e6e64f7626067e2f3d2b2bd9343cba99);
+            
+        
+
+        marker_8bfa536b9fe963866ac99e8e06accf3f.bindPopup(popup_5aa2976a7329b70419dd00ac208f88ab)
+        ;
+
+        
+    
+    
+            var marker_ec03d2817226c5c9c69c546290a8a069 = L.marker(
+                [30.3734303, -97.7247091],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_44a6683757dbff85a28f5d607f488550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_ec03d2817226c5c9c69c546290a8a069.setIcon(icon_44a6683757dbff85a28f5d607f488550);
+        
+    
+        var popup_aedb893c302fb9bb5756d4f603e31c89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fa760f41a014a74499c0ca957ab099f = $(`<div id="html_3fa760f41a014a74499c0ca957ab099f" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9101 Burnet/Research.<br>Name of POI: Mikado Ryotei.<br>Type of POI: restaurant.<br>Bus journey: 3.4833333333333334.</div>`)[0];
+                popup_aedb893c302fb9bb5756d4f603e31c89.setContent(html_3fa760f41a014a74499c0ca957ab099f);
+            
+        
+
+        marker_ec03d2817226c5c9c69c546290a8a069.bindPopup(popup_aedb893c302fb9bb5756d4f603e31c89)
+        ;
+
+        
+    
+    
+            var marker_811ac2dfc470b517cd0ecbeb9a9275e6 = L.marker(
+                [30.3735638, -97.7255279],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_9c42c619c9f6d866601082b75dbf83a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_811ac2dfc470b517cd0ecbeb9a9275e6.setIcon(icon_9c42c619c9f6d866601082b75dbf83a9);
+        
+    
+        var popup_0f370eb8364643a05ecea61c0b5d56ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94311aa798509e88ec471f0fdbc0f609 = $(`<div id="html_94311aa798509e88ec471f0fdbc0f609" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9101 Burnet/Research.<br>Name of POI: Casa Chapala.<br>Type of POI: restaurant.<br>Bus journey: 3.4833333333333334.</div>`)[0];
+                popup_0f370eb8364643a05ecea61c0b5d56ab.setContent(html_94311aa798509e88ec471f0fdbc0f609);
+            
+        
+
+        marker_811ac2dfc470b517cd0ecbeb9a9275e6.bindPopup(popup_0f370eb8364643a05ecea61c0b5d56ab)
+        ;
+
+        
+    
+    
+            var marker_5c21c14b4b52105014c040f3d7e8dc88 = L.marker(
+                [30.37450783079611, -97.72775778721386],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_dfafeeb4a8186cf32c3ef4075f0914da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_5c21c14b4b52105014c040f3d7e8dc88.setIcon(icon_dfafeeb4a8186cf32c3ef4075f0914da);
+        
+    
+        var popup_825b0f971bc6d8a4ace88790b6271365 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94af0182f27869e3ad805e9b21e0fe40 = $(`<div id="html_94af0182f27869e3ad805e9b21e0fe40" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9101 Burnet/Research.<br>Name of POI: Jim's Restaurant.<br>Type of POI: restaurant.<br>Bus journey: 3.4833333333333334.</div>`)[0];
+                popup_825b0f971bc6d8a4ace88790b6271365.setContent(html_94af0182f27869e3ad805e9b21e0fe40);
+            
+        
+
+        marker_5c21c14b4b52105014c040f3d7e8dc88.bindPopup(popup_825b0f971bc6d8a4ace88790b6271365)
+        ;
+
+        
+    
+    
+            var marker_a1df564cff2371ecbfb4d09800d30c61 = L.marker(
+                [30.390868816547965, -97.72227021270854],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_ea5406516f69aa92e2425deb9f28859f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_a1df564cff2371ecbfb4d09800d30c61.setIcon(icon_ea5406516f69aa92e2425deb9f28859f);
+        
+    
+        var popup_cd1f55223b096c153cbda822eae1e745 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_48b1acf31901ac462bd6911135ba4720 = $(`<div id="html_48b1acf31901ac462bd6911135ba4720" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Burnet NW Corner.<br>Name of POI: Starbucks.<br>Type of POI: cafe.<br>Bus journey: 8.733333333333333.</div>`)[0];
+                popup_cd1f55223b096c153cbda822eae1e745.setContent(html_48b1acf31901ac462bd6911135ba4720);
+            
+        
+
+        marker_a1df564cff2371ecbfb4d09800d30c61.bindPopup(popup_cd1f55223b096c153cbda822eae1e745)
+        ;
+
+        
+    
+    
+            var marker_561fb871465476480662e1dfd4f9ff5b = L.marker(
+                [30.3947579, -97.7277708],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_7fe613fb147d7c03b784750e91c88744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_561fb871465476480662e1dfd4f9ff5b.setIcon(icon_7fe613fb147d7c03b784750e91c88744);
+        
+    
+        var popup_bcefce4b63a3af31e49d9de1d5013804 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f1aa03312cd1a5e208374e597fd92076 = $(`<div id="html_f1aa03312cd1a5e208374e597fd92076" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/IBM.<br>Name of POI: Sushi Zushi.<br>Type of POI: restaurant.<br>Bus journey: 9.7.</div>`)[0];
+                popup_bcefce4b63a3af31e49d9de1d5013804.setContent(html_f1aa03312cd1a5e208374e597fd92076);
+            
+        
+
+        marker_561fb871465476480662e1dfd4f9ff5b.bindPopup(popup_bcefce4b63a3af31e49d9de1d5013804)
+        ;
+
+        
+    
+    
+            var marker_8212e61e874057e176adfc801a755603 = L.marker(
+                [30.39339165, -97.72669489999998],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_63a438f79d546c9bec305819c7b6d15a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_8212e61e874057e176adfc801a755603.setIcon(icon_63a438f79d546c9bec305819c7b6d15a);
+        
+    
+        var popup_4a3d079ef331562b01604b9d657b178c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e0d16624b3728bf206e08cb92ace243 = $(`<div id="html_5e0d16624b3728bf206e08cb92ace243" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/IBM.<br>Name of POI: CAVA.<br>Type of POI: restaurant.<br>Bus journey: 9.7.</div>`)[0];
+                popup_4a3d079ef331562b01604b9d657b178c.setContent(html_5e0d16624b3728bf206e08cb92ace243);
+            
+        
+
+        marker_8212e61e874057e176adfc801a755603.bindPopup(popup_4a3d079ef331562b01604b9d657b178c)
+        ;
+
+        
+    
+    
+            var marker_ecceb15de9db4ecf0e10b23259e97e1e = L.marker(
+                [30.397723910677637, -97.73339376749531],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_9667f4a5afa9b0611fcc6adeab38d177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_ecceb15de9db4ecf0e10b23259e97e1e.setIcon(icon_9667f4a5afa9b0611fcc6adeab38d177);
+        
+    
+        var popup_6aa74b60f9d4a2131958cba2f3b0fe02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_decb15c8005e4b59b5340e0e31c49811 = $(`<div id="html_decb15c8005e4b59b5340e0e31c49811" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Mopac NE Corner.<br>Name of POI: The Boat.<br>Type of POI: restaurant.<br>Bus journey: 11.333333333333334.</div>`)[0];
+                popup_6aa74b60f9d4a2131958cba2f3b0fe02.setContent(html_decb15c8005e4b59b5340e0e31c49811);
+            
+        
+
+        marker_ecceb15de9db4ecf0e10b23259e97e1e.bindPopup(popup_6aa74b60f9d4a2131958cba2f3b0fe02)
+        ;
+
+        
+    
+    
+            var marker_4fd48eb75d7ea50fda804dbdfb79169a = L.marker(
+                [30.397723910677637, -97.73339376749531],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_26443a47566a149e237d112be988ae05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_4fd48eb75d7ea50fda804dbdfb79169a.setIcon(icon_26443a47566a149e237d112be988ae05);
+        
+    
+        var popup_0b818e995b78a74b0d3aaea0f85c973a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7797e6753d5c236e6e31cda97ecde8b = $(`<div id="html_e7797e6753d5c236e6e31cda97ecde8b" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Mopac (Farside/Midblock).<br>Name of POI: The Boat.<br>Type of POI: restaurant.<br>Bus journey: 12.683333333333334.</div>`)[0];
+                popup_0b818e995b78a74b0d3aaea0f85c973a.setContent(html_e7797e6753d5c236e6e31cda97ecde8b);
+            
+        
+
+        marker_4fd48eb75d7ea50fda804dbdfb79169a.bindPopup(popup_0b818e995b78a74b0d3aaea0f85c973a)
+        ;
+
+        
+    
+    
+            var marker_4cc3ab3faccbaab56909e85cbf00e7aa = L.marker(
+                [30.400883459754954, -97.73781463235258],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_fa835a5bf52bfd79ad653b3ee4b8107b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_4cc3ab3faccbaab56909e85cbf00e7aa.setIcon(icon_fa835a5bf52bfd79ad653b3ee4b8107b);
+        
+    
+        var popup_a5bc418f0e7d93c66bbfcbbe9b594ad0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0a1e0d1e95b19e39e9e0476f5f7318e = $(`<div id="html_f0a1e0d1e95b19e39e9e0476f5f7318e" style="width: 100.0%; height: 100.0%;">Closest bus stop: 4223 Braker/Stonelake.<br>Name of POI: Roaring Fork.<br>Type of POI: restaurant.<br>Bus journey: 13.716666666666667.</div>`)[0];
+                popup_a5bc418f0e7d93c66bbfcbbe9b594ad0.setContent(html_f0a1e0d1e95b19e39e9e0476f5f7318e);
+            
+        
+
+        marker_4cc3ab3faccbaab56909e85cbf00e7aa.bindPopup(popup_a5bc418f0e7d93c66bbfcbbe9b594ad0)
+        ;
+
+        
+    
+    
+            var marker_becd92deb2b55dbee426277b203ee528 = L.marker(
+                [30.400081485821136, -97.73921536802607],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_ae4263c9e002eb24a8a714e3301821f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_becd92deb2b55dbee426277b203ee528.setIcon(icon_ae4263c9e002eb24a8a714e3301821f6);
+        
+    
+        var popup_267c284b8a1930ca944c417932f8be95 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd77c0675d8d945c778dafd9e20f499f = $(`<div id="html_dd77c0675d8d945c778dafd9e20f499f" style="width: 100.0%; height: 100.0%;">Closest bus stop: 4223 Braker/Stonelake.<br>Name of POI: Provision.<br>Type of POI: restaurant.<br>Bus journey: 13.716666666666667.</div>`)[0];
+                popup_267c284b8a1930ca944c417932f8be95.setContent(html_dd77c0675d8d945c778dafd9e20f499f);
+            
+        
+
+        marker_becd92deb2b55dbee426277b203ee528.bindPopup(popup_267c284b8a1930ca944c417932f8be95)
+        ;
+
+        
+    
+    
+            var marker_67565afc62d035e7f9b2f1501d6a41e9 = L.marker(
+                [30.4001039, -97.748023],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_2a2c0e89d9f8c2ef3f67e36bf94f3b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_67565afc62d035e7f9b2f1501d6a41e9.setIcon(icon_2a2c0e89d9f8c2ef3f67e36bf94f3b69);
+        
+    
+        var popup_5b7361175ea1700e93aab9b7b65d7198 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0779de45bf855aa04463ead0c4bd103 = $(`<div id="html_e0779de45bf855aa04463ead0c4bd103" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Twin Lion.<br>Type of POI: restaurant.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_5b7361175ea1700e93aab9b7b65d7198.setContent(html_e0779de45bf855aa04463ead0c4bd103);
+            
+        
+
+        marker_67565afc62d035e7f9b2f1501d6a41e9.bindPopup(popup_5b7361175ea1700e93aab9b7b65d7198)
+        ;
+
+        
+    
+    
+            var marker_b53207c9a860c916d1e0ac9ddfc27953 = L.marker(
+                [30.3988329, -97.7490667],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_2f818719df9eec81b5d02a78307d7d83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_b53207c9a860c916d1e0ac9ddfc27953.setIcon(icon_2f818719df9eec81b5d02a78307d7d83);
+        
+    
+        var popup_73963ac5f362986e3f5d86f9ccfc66b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e99d2a7e21c1375415c613af82e71dbd = $(`<div id="html_e99d2a7e21c1375415c613af82e71dbd" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Brick Oven.<br>Type of POI: restaurant.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_73963ac5f362986e3f5d86f9ccfc66b7.setContent(html_e99d2a7e21c1375415c613af82e71dbd);
+            
+        
+
+        marker_b53207c9a860c916d1e0ac9ddfc27953.bindPopup(popup_73963ac5f362986e3f5d86f9ccfc66b7)
+        ;
+
+        
+    
+    
+            var marker_ff0f38ca458f823f4e7fcb536ead2693 = L.marker(
+                [30.3998084, -97.746813],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_0e8f625b89ed6c6bb9437e25280cbdd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_ff0f38ca458f823f4e7fcb536ead2693.setIcon(icon_0e8f625b89ed6c6bb9437e25280cbdd7);
+        
+    
+        var popup_05c98bc88cee3285426ea9c384858a79 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_45b3a7e0b109318dfd755a2a53deef45 = $(`<div id="html_45b3a7e0b109318dfd755a2a53deef45" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Gatti's Pizza.<br>Type of POI: restaurant.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_05c98bc88cee3285426ea9c384858a79.setContent(html_45b3a7e0b109318dfd755a2a53deef45);
+            
+        
+
+        marker_ff0f38ca458f823f4e7fcb536ead2693.bindPopup(popup_05c98bc88cee3285426ea9c384858a79)
+        ;
+
+        
+    
+    
+            var marker_f0502f6ecdc3b7e47d6df6cfa4e5be1c = L.marker(
+                [30.3999414, -97.7485126],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_34fd51b5bfe6be6c1d6cc9884a2350d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_f0502f6ecdc3b7e47d6df6cfa4e5be1c.setIcon(icon_34fd51b5bfe6be6c1d6cc9884a2350d6);
+        
+    
+        var popup_c8f5bf479e4b1fb95bf6d21abbfad06e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cbe029f757a9478dbd788f29b72ae723 = $(`<div id="html_cbe029f757a9478dbd788f29b72ae723" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Fujiyama.<br>Type of POI: restaurant.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_c8f5bf479e4b1fb95bf6d21abbfad06e.setContent(html_cbe029f757a9478dbd788f29b72ae723);
+            
+        
+
+        marker_f0502f6ecdc3b7e47d6df6cfa4e5be1c.bindPopup(popup_c8f5bf479e4b1fb95bf6d21abbfad06e)
+        ;
+
+        
+    
+    
+            var marker_f2952836c051f1eb84777254666b1fe1 = L.marker(
+                [30.3987013, -97.7491029],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_30c907725858d2c563ea6c9dea14dced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_f2952836c051f1eb84777254666b1fe1.setIcon(icon_30c907725858d2c563ea6c9dea14dced);
+        
+    
+        var popup_a536ec52e5d42eea4b9fed33cee9b912 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd953c1397b1a98b7cec99d9039228c8 = $(`<div id="html_dd953c1397b1a98b7cec99d9039228c8" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Yogertz.<br>Type of POI: cafe.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_a536ec52e5d42eea4b9fed33cee9b912.setContent(html_dd953c1397b1a98b7cec99d9039228c8);
+            
+        
+
+        marker_f2952836c051f1eb84777254666b1fe1.bindPopup(popup_a536ec52e5d42eea4b9fed33cee9b912)
+        ;
+
+        
+    
+    
+            var marker_87f44475bc483706596df6c6698d0a4f = L.marker(
+                [30.3999342, -97.7483653],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_f2dcc2ce8fca70cd5bdfa8abc18928cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_87f44475bc483706596df6c6698d0a4f.setIcon(icon_f2dcc2ce8fca70cd5bdfa8abc18928cd);
+        
+    
+        var popup_5cf3201faa8f8ae8427e9bdbb2e2e9b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fda6f4ad072b9eb2b5706b75d3d8862 = $(`<div id="html_7fda6f4ad072b9eb2b5706b75d3d8862" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Great Harvest Bread Co..<br>Type of POI: cafe.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_5cf3201faa8f8ae8427e9bdbb2e2e9b7.setContent(html_7fda6f4ad072b9eb2b5706b75d3d8862);
+            
+        
+
+        marker_87f44475bc483706596df6c6698d0a4f.bindPopup(popup_5cf3201faa8f8ae8427e9bdbb2e2e9b7)
+        ;
+
+        
+    
+    
+            var marker_0811aea2cdff0a822077ef80590e5048 = L.marker(
+                [30.4019782, -97.7469768],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_5effdbb276363fb94e7e298c0569896d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_0811aea2cdff0a822077ef80590e5048.setIcon(icon_5effdbb276363fb94e7e298c0569896d);
+        
+    
+        var popup_efb21b00bc6f8a5f4278bedfc57c71aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82b339f4d9a18514a34f45335c0e12a6 = $(`<div id="html_82b339f4d9a18514a34f45335c0e12a6" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Signature Cafe.<br>Type of POI: cafe.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_efb21b00bc6f8a5f4278bedfc57c71aa.setContent(html_82b339f4d9a18514a34f45335c0e12a6);
+            
+        
+
+        marker_0811aea2cdff0a822077ef80590e5048.bindPopup(popup_efb21b00bc6f8a5f4278bedfc57c71aa)
+        ;
+
+        
+    
+    
+            var marker_282709a2aee181f941c6a9ab19cf96ca = L.marker(
+                [30.401983, -97.7468743],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_52398f925d0396cdf7999177d83755f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_282709a2aee181f941c6a9ab19cf96ca.setIcon(icon_52398f925d0396cdf7999177d83755f3);
+        
+    
+        var popup_3e4638d37feaf1b1a4511c57501a5481 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5d4e39adb8c39556713377250f2efb1 = $(`<div id="html_d5d4e39adb8c39556713377250f2efb1" style="width: 100.0%; height: 100.0%;">Closest bus stop: Braker/Research NW Corner.<br>Name of POI: Starbucks.<br>Type of POI: cafe.<br>Bus journey: 15.783333333333333.</div>`)[0];
+                popup_3e4638d37feaf1b1a4511c57501a5481.setContent(html_d5d4e39adb8c39556713377250f2efb1);
+            
+        
+
+        marker_282709a2aee181f941c6a9ab19cf96ca.bindPopup(popup_3e4638d37feaf1b1a4511c57501a5481)
+        ;
+
+        
+    
+    
+            var marker_3a948a14aec00f228f453cbb5056f891 = L.marker(
+                [30.394918, -97.7525341],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_89c2911507f1034d5f858784a9e53480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_3a948a14aec00f228f453cbb5056f891.setIcon(icon_89c2911507f1034d5f858784a9e53480);
+        
+    
+        var popup_b4d533f9df3a271ebba4394b138613a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98107e8c1fb475c76e92cb63a38c2ce7 = $(`<div id="html_98107e8c1fb475c76e92cb63a38c2ce7" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Starbucks.<br>Type of POI: cafe.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_b4d533f9df3a271ebba4394b138613a2.setContent(html_98107e8c1fb475c76e92cb63a38c2ce7);
+            
+        
+
+        marker_3a948a14aec00f228f453cbb5056f891.bindPopup(popup_b4d533f9df3a271ebba4394b138613a2)
+        ;
+
+        
+    
+    
+            var marker_6ab047b1ac8e0ff8e88fc41ffceaf8a6 = L.marker(
+                [30.3955201, -97.7503376],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_4172b4829287ad44b38a0c61d7021277 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_6ab047b1ac8e0ff8e88fc41ffceaf8a6.setIcon(icon_4172b4829287ad44b38a0c61d7021277);
+        
+    
+        var popup_88ec6e49eccb9a0575aeceffff0a35c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0af6b3583e700240179c8bc6d62e960 = $(`<div id="html_d0af6b3583e700240179c8bc6d62e960" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: P.F. Chang's.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_88ec6e49eccb9a0575aeceffff0a35c5.setContent(html_d0af6b3583e700240179c8bc6d62e960);
+            
+        
+
+        marker_6ab047b1ac8e0ff8e88fc41ffceaf8a6.bindPopup(popup_88ec6e49eccb9a0575aeceffff0a35c5)
+        ;
+
+        
+    
+    
+            var marker_a92cd7bbd51e9d84af307571e3fcbed6 = L.marker(
+                [30.3988329, -97.7490667],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_17cd5eecd16aac98b701c1d2f69146f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_a92cd7bbd51e9d84af307571e3fcbed6.setIcon(icon_17cd5eecd16aac98b701c1d2f69146f6);
+        
+    
+        var popup_abc45147e3e028e7f6101aadb72c1494 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e765efdb70d87239ed8332633ade983e = $(`<div id="html_e765efdb70d87239ed8332633ade983e" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Brick Oven.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_abc45147e3e028e7f6101aadb72c1494.setContent(html_e765efdb70d87239ed8332633ade983e);
+            
+        
+
+        marker_a92cd7bbd51e9d84af307571e3fcbed6.bindPopup(popup_abc45147e3e028e7f6101aadb72c1494)
+        ;
+
+        
+    
+    
+            var marker_3dd78213bf260727213144c3e9803af9 = L.marker(
+                [30.3950396, -97.7493683],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_d09fe1624f4d7e329e08a01ff4b7db14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_3dd78213bf260727213144c3e9803af9.setIcon(icon_d09fe1624f4d7e329e08a01ff4b7db14);
+        
+    
+        var popup_bb6af652d81d08259b4a914f4794a0b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be7525b6ae6fa293d8d6258ff2410703 = $(`<div id="html_be7525b6ae6fa293d8d6258ff2410703" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Modern Market.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_bb6af652d81d08259b4a914f4794a0b0.setContent(html_be7525b6ae6fa293d8d6258ff2410703);
+            
+        
+
+        marker_3dd78213bf260727213144c3e9803af9.bindPopup(popup_bb6af652d81d08259b4a914f4794a0b0)
+        ;
+
+        
+    
+    
+            var marker_b34053ca15090df8aa051639590b53d9 = L.marker(
+                [30.3950774, -97.7484716],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_12455e8d21004e2fe0ceece0b256e5bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_b34053ca15090df8aa051639590b53d9.setIcon(icon_12455e8d21004e2fe0ceece0b256e5bd);
+        
+    
+        var popup_d6ca734892692d45ec19d0dfa21eef75 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_114d093b19093d09179e093746a7c6ab = $(`<div id="html_114d093b19093d09179e093746a7c6ab" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Honest Mary's.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_d6ca734892692d45ec19d0dfa21eef75.setContent(html_114d093b19093d09179e093746a7c6ab);
+            
+        
+
+        marker_b34053ca15090df8aa051639590b53d9.bindPopup(popup_d6ca734892692d45ec19d0dfa21eef75)
+        ;
+
+        
+    
+    
+            var marker_769b1f0ef2f19eec68208631f0e1ef93 = L.marker(
+                [30.3952181, -97.7493734],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_fa0d97ffe707f29811c34a2f087e906d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_769b1f0ef2f19eec68208631f0e1ef93.setIcon(icon_fa0d97ffe707f29811c34a2f087e906d);
+        
+    
+        var popup_993c28a52fdc56e720be9cedba9c194e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ef38b1992b56bf0b0cbe109afc2663a5 = $(`<div id="html_ef38b1992b56bf0b0cbe109afc2663a5" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: FireBowlCafe.<br>Type of POI: cafe.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_993c28a52fdc56e720be9cedba9c194e.setContent(html_ef38b1992b56bf0b0cbe109afc2663a5);
+            
+        
+
+        marker_769b1f0ef2f19eec68208631f0e1ef93.bindPopup(popup_993c28a52fdc56e720be9cedba9c194e)
+        ;
+
+        
+    
+    
+            var marker_df3267ddf43aacee81d3503c3fb8000e = L.marker(
+                [30.3987013, -97.7491029],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_c11f00a9fcde58a9bd842838789c0326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_df3267ddf43aacee81d3503c3fb8000e.setIcon(icon_c11f00a9fcde58a9bd842838789c0326);
+        
+    
+        var popup_8b719165babed9a525b1a991e957fbf0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_828cc545ad27db8d50118608424d0dca = $(`<div id="html_828cc545ad27db8d50118608424d0dca" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Yogertz.<br>Type of POI: cafe.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_8b719165babed9a525b1a991e957fbf0.setContent(html_828cc545ad27db8d50118608424d0dca);
+            
+        
+
+        marker_df3267ddf43aacee81d3503c3fb8000e.bindPopup(popup_8b719165babed9a525b1a991e957fbf0)
+        ;
+
+        
+    
+    
+            var marker_e41bd3de7266b3fcb6e6538fe5101fb5 = L.marker(
+                [30.3951748, -97.7510323],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_ddf4346c0b79de36f5a0b73f81eead23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_e41bd3de7266b3fcb6e6538fe5101fb5.setIcon(icon_ddf4346c0b79de36f5a0b73f81eead23);
+        
+    
+        var popup_805e0e9d5d5f8bac5585a18c9980bb29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_985bce7b513c68de52cb79e0f5020fbe = $(`<div id="html_985bce7b513c68de52cb79e0f5020fbe" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Newk's.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_805e0e9d5d5f8bac5585a18c9980bb29.setContent(html_985bce7b513c68de52cb79e0f5020fbe);
+            
+        
+
+        marker_e41bd3de7266b3fcb6e6538fe5101fb5.bindPopup(popup_805e0e9d5d5f8bac5585a18c9980bb29)
+        ;
+
+        
+    
+    
+            var marker_8f4d2a748929c48a51db560d2c9c5ed3 = L.marker(
+                [30.398259, -97.7493286],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_5c2e1319bcce898ca4b82e2f614efc48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_8f4d2a748929c48a51db560d2c9c5ed3.setIcon(icon_5c2e1319bcce898ca4b82e2f614efc48);
+        
+    
+        var popup_648899e27f1f5e38aa4ae8665acbedae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f46772ce0bea9e72faf088db20d84f22 = $(`<div id="html_f46772ce0bea9e72faf088db20d84f22" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Mama Fu's.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_648899e27f1f5e38aa4ae8665acbedae.setContent(html_f46772ce0bea9e72faf088db20d84f22);
+            
+        
+
+        marker_8f4d2a748929c48a51db560d2c9c5ed3.bindPopup(popup_648899e27f1f5e38aa4ae8665acbedae)
+        ;
+
+        
+    
+    
+            var marker_fe7d7ff7728f22fe61338dc2923fdcb8 = L.marker(
+                [30.396735783753286, -97.74930352865478],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_32a0c6467a1445bee9de5b13691d02fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_fe7d7ff7728f22fe61338dc2923fdcb8.setIcon(icon_32a0c6467a1445bee9de5b13691d02fe);
+        
+    
+        var popup_626b5f62701716731973677144386dc8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_520c99426c726c0c33b5b69f8c137374 = $(`<div id="html_520c99426c726c0c33b5b69f8c137374" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Manuel's.<br>Type of POI: restaurant.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_626b5f62701716731973677144386dc8.setContent(html_520c99426c726c0c33b5b69f8c137374);
+            
+        
+
+        marker_fe7d7ff7728f22fe61338dc2923fdcb8.bindPopup(popup_626b5f62701716731973677144386dc8)
+        ;
+
+        
+    
+    
+            var marker_db046439d1b43e7d6798f15922ea736a = L.marker(
+                [30.395831542236635, -97.74882798017838],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_299ba3c56cb17a78cd3261690980623a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "film", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_db046439d1b43e7d6798f15922ea736a.setIcon(icon_299ba3c56cb17a78cd3261690980623a);
+        
+    
+        var popup_20b084dd20d9f626fd53f031c08707f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ecd666c940fc6450823632b9b8431184 = $(`<div id="html_ecd666c940fc6450823632b9b8431184" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10300 Jollyville/Great Hills.<br>Name of POI: Arbor Cinema @ Great Hills.<br>Type of POI: cinema.<br>Bus journey: 17.416666666666668.</div>`)[0];
+                popup_20b084dd20d9f626fd53f031c08707f6.setContent(html_ecd666c940fc6450823632b9b8431184);
+            
+        
+
+        marker_db046439d1b43e7d6798f15922ea736a.bindPopup(popup_20b084dd20d9f626fd53f031c08707f6)
+        ;
+
+        
+    
+    
+            var marker_6bedfe42b2be1bdf0b189273d4b63686 = L.marker(
+                [30.3955201, -97.7503376],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_52831158f5895d30c117c8c8e4c2aad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_6bedfe42b2be1bdf0b189273d4b63686.setIcon(icon_52831158f5895d30c117c8c8e4c2aad6);
+        
+    
+        var popup_e6f011b76c56b3d62d9c68e62dc03c80 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_21117e0347fbfe52d3a131e0fea9cf23 = $(`<div id="html_21117e0347fbfe52d3a131e0fea9cf23" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: P.F. Chang's.<br>Type of POI: restaurant.<br>Bus journey: 18.65.</div>`)[0];
+                popup_e6f011b76c56b3d62d9c68e62dc03c80.setContent(html_21117e0347fbfe52d3a131e0fea9cf23);
+            
+        
+
+        marker_6bedfe42b2be1bdf0b189273d4b63686.bindPopup(popup_e6f011b76c56b3d62d9c68e62dc03c80)
+        ;
+
+        
+    
+    
+            var marker_4bf9e660d715a31fd2e8d7c2e80ee4d2 = L.marker(
+                [30.3957428, -97.7472319],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_f583760b3e3fc3ffc778d068f7f1d31d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_4bf9e660d715a31fd2e8d7c2e80ee4d2.setIcon(icon_f583760b3e3fc3ffc778d068f7f1d31d);
+        
+    
+        var popup_7f66d18c1beb85a3d4d81e033325f2a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_27643202b7359c00e89befa9eb56b704 = $(`<div id="html_27643202b7359c00e89befa9eb56b704" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: la Madeleine.<br>Type of POI: restaurant.<br>Bus journey: 18.65.</div>`)[0];
+                popup_7f66d18c1beb85a3d4d81e033325f2a3.setContent(html_27643202b7359c00e89befa9eb56b704);
+            
+        
+
+        marker_4bf9e660d715a31fd2e8d7c2e80ee4d2.bindPopup(popup_7f66d18c1beb85a3d4d81e033325f2a3)
+        ;
+
+        
+    
+    
+            var marker_34b5de82d8db59ea2aa684566c1f3f2f = L.marker(
+                [30.3950396, -97.7493683],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_970ca33e4a4a319788e873ae49652262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_34b5de82d8db59ea2aa684566c1f3f2f.setIcon(icon_970ca33e4a4a319788e873ae49652262);
+        
+    
+        var popup_ec95164c004e8a894c21a6463d9c955e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1012b3e3a68dcc5423fbb3e3f3f131c6 = $(`<div id="html_1012b3e3a68dcc5423fbb3e3f3f131c6" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: Modern Market.<br>Type of POI: restaurant.<br>Bus journey: 18.65.</div>`)[0];
+                popup_ec95164c004e8a894c21a6463d9c955e.setContent(html_1012b3e3a68dcc5423fbb3e3f3f131c6);
+            
+        
+
+        marker_34b5de82d8db59ea2aa684566c1f3f2f.bindPopup(popup_ec95164c004e8a894c21a6463d9c955e)
+        ;
+
+        
+    
+    
+            var marker_8dcc06ebd418b51e94e0ad29ffd7f1f2 = L.marker(
+                [30.3950774, -97.7484716],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_76841e4da65e05153a7bb011b46589a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_8dcc06ebd418b51e94e0ad29ffd7f1f2.setIcon(icon_76841e4da65e05153a7bb011b46589a9);
+        
+    
+        var popup_d6fbe354f4724c1de4585d1f71acf3ff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1794bccdd4f6f4e1023dc9fb0f5c6cf1 = $(`<div id="html_1794bccdd4f6f4e1023dc9fb0f5c6cf1" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: Honest Mary's.<br>Type of POI: restaurant.<br>Bus journey: 18.65.</div>`)[0];
+                popup_d6fbe354f4724c1de4585d1f71acf3ff.setContent(html_1794bccdd4f6f4e1023dc9fb0f5c6cf1);
+            
+        
+
+        marker_8dcc06ebd418b51e94e0ad29ffd7f1f2.bindPopup(popup_d6fbe354f4724c1de4585d1f71acf3ff)
+        ;
+
+        
+    
+    
+            var marker_bb66c47219d63bc2d99031ea42825a99 = L.marker(
+                [30.3952181, -97.7493734],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_87f00c9b69a0aef092e14a520ef10988 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_bb66c47219d63bc2d99031ea42825a99.setIcon(icon_87f00c9b69a0aef092e14a520ef10988);
+        
+    
+        var popup_c08f7ade3347fe5a83fb5d25dbe902bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_40ed843d77094b29e9b4ba9233dd08e5 = $(`<div id="html_40ed843d77094b29e9b4ba9233dd08e5" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: FireBowlCafe.<br>Type of POI: cafe.<br>Bus journey: 18.65.</div>`)[0];
+                popup_c08f7ade3347fe5a83fb5d25dbe902bc.setContent(html_40ed843d77094b29e9b4ba9233dd08e5);
+            
+        
+
+        marker_bb66c47219d63bc2d99031ea42825a99.bindPopup(popup_c08f7ade3347fe5a83fb5d25dbe902bc)
+        ;
+
+        
+    
+    
+            var marker_0572e2a30993693ebe89d73c46953d78 = L.marker(
+                [30.395831542236635, -97.74882798017838],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_357f334877bb4db2f4837324b4601c11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "film", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0572e2a30993693ebe89d73c46953d78.setIcon(icon_357f334877bb4db2f4837324b4601c11);
+        
+    
+        var popup_c576d83195446ebe8ee5413e4d8e8037 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f4ffbcbb4d309b37391e7f0d5837cda = $(`<div id="html_1f4ffbcbb4d309b37391e7f0d5837cda" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: Arbor Cinema @ Great Hills.<br>Type of POI: cinema.<br>Bus journey: 18.65.</div>`)[0];
+                popup_c576d83195446ebe8ee5413e4d8e8037.setContent(html_1f4ffbcbb4d309b37391e7f0d5837cda);
+            
+        
+
+        marker_0572e2a30993693ebe89d73c46953d78.bindPopup(popup_c576d83195446ebe8ee5413e4d8e8037)
+        ;
+
+        
+    
+    
+            var marker_ddf5c92bc0350cf616bd86cfb5aa1c55 = L.marker(
+                [30.39454304934379, -97.74758061660229],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_f3d9e1e60fb96512e3bed39773ebeaa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_ddf5c92bc0350cf616bd86cfb5aa1c55.setIcon(icon_f3d9e1e60fb96512e3bed39773ebeaa6);
+        
+    
+        var popup_ac62b7b0de3002b7fa7c402e92737630 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3346a950ce83bdce738deba92aed8fbf = $(`<div id="html_3346a950ce83bdce738deba92aed8fbf" style="width: 100.0%; height: 100.0%;">Closest bus stop: 9829 Great Hills/Jollyville.<br>Name of POI: Romano's Macaroni Grill.<br>Type of POI: restaurant.<br>Bus journey: 18.65.</div>`)[0];
+                popup_ac62b7b0de3002b7fa7c402e92737630.setContent(html_3346a950ce83bdce738deba92aed8fbf);
+            
+        
+
+        marker_ddf5c92bc0350cf616bd86cfb5aa1c55.bindPopup(popup_ac62b7b0de3002b7fa7c402e92737630)
+        ;
+
+        
+    
+    
+            var marker_67b73a7586fde75545e6469192837a3e = L.marker(
+                [30.3947997, -97.7444977],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_a0aec1c55cab6daf314b0ce1660bb481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_67b73a7586fde75545e6469192837a3e.setIcon(icon_a0aec1c55cab6daf314b0ce1660bb481);
+        
+    
+        var popup_51bd6659d7e7eada1fe2543987cf1b3d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e8a716176ddcadac4c6f375c5e74f1d = $(`<div id="html_5e8a716176ddcadac4c6f375c5e74f1d" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10051 Great Hills/Research (Target).<br>Name of POI: Jason's Deli.<br>Type of POI: restaurant.<br>Bus journey: 19.916666666666668.</div>`)[0];
+                popup_51bd6659d7e7eada1fe2543987cf1b3d.setContent(html_5e8a716176ddcadac4c6f375c5e74f1d);
+            
+        
+
+        marker_67b73a7586fde75545e6469192837a3e.bindPopup(popup_51bd6659d7e7eada1fe2543987cf1b3d)
+        ;
+
+        
+    
+    
+            var marker_ce22189597ceaa87c15af6c0b441782b = L.marker(
+                [30.39539812996349, -97.74536941344515],
+                {}
+            ).addTo(map_773f940a78dd682fcde87337155985c2);
+        
+    
+            var icon_b5994b721ec93fdc0deaf267173edb33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "brown", "prefix": "fa"}
+            );
+            marker_ce22189597ceaa87c15af6c0b441782b.setIcon(icon_b5994b721ec93fdc0deaf267173edb33);
+        
+    
+        var popup_300a070834b988ba660a8cb8e6c798e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a04f5954187b95d8d26161ad82fa8c2f = $(`<div id="html_a04f5954187b95d8d26161ad82fa8c2f" style="width: 100.0%; height: 100.0%;">Closest bus stop: 10051 Great Hills/Research (Target).<br>Name of POI: Truluck's Seafood Steak & Crab.<br>Type of POI: restaurant.<br>Bus journey: 19.916666666666668.</div>`)[0];
+                popup_300a070834b988ba660a8cb8e6c798e6.setContent(html_a04f5954187b95d8d26161ad82fa8c2f);
+            
+        
+
+        marker_ce22189597ceaa87c15af6c0b441782b.bindPopup(popup_300a070834b988ba660a8cb8e6c798e6)
+        ;
+
+        
+    
+</script>
+</html>
