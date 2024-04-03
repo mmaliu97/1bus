@@ -17,49 +17,9 @@ CORS(app)
 
 app.secret_key = 'mliu'  # Set a secret key for session
 
-# Database connection parameters
-connection_params = {
-    "host": "localhost",
-    "database": "GTFS",
-    "user": "postgres",
-    "password": "1234",
-}
-
-try:
-    conn = psycopg2.connect(**connection_params)
-except psycopg2.Error as e:
-    print("Error connecting to the database:", e)
-
-# Loading the data from PostgreSQL server
-table_name = "gtfs.trips"  # Replace with your table name
-query = f"SELECT * FROM {table_name}"
-
-try:
-    trips_df = pd.read_sql_query(query, conn)
-except pd.errors.EmptyDataError:
-    print(f"The table '{table_name}' is empty.")
-except Exception as e:
-    print(f"Error querying data from '{table_name}':", e)
-
-table_name = "gtfs.stops"  # Replace with your table name
-query = f"SELECT * FROM {table_name}"
-try:
-    stops_df = pd.read_sql_query(query, conn)
-except pd.errors.EmptyDataError:
-    print(f"The table '{table_name}' is empty.")
-except Exception as e:
-    print(f"Error querying data from '{table_name}':", e)
-
-table_name = "gtfs.stop_times"  # Replace with your table name
-query = f"SELECT * FROM {table_name}"
-try:
-    stop_times_df = pd.read_sql_query(query, conn)
-except pd.errors.EmptyDataError:
-    print(f"The table '{table_name}' is empty.")
-except Exception as e:
-    print(f"Error querying data from '{table_name}':", e)
-
-conn.close()
+stops_df = pd.read_csv("data_files\stops.csv")
+trips_df = pd.read_csv("data_files\e_trips.csv")
+stop_times_df = pd.read_csv("data_files\stop_times.csv")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
