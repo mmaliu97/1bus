@@ -3,7 +3,6 @@
 import pandas as pd
 import osmnx as ox
 from datetime import datetime
-import psycopg2
 from datetime import timedelta
 import pandas as pd
 from shapely.geometry import Point, Polygon

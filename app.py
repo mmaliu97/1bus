@@ -1,14 +1,9 @@
 from flask import Flask, render_template, request, jsonify, redirect, session, url_for
 from bus_functions import *
 import pandas as pd
-import osmnx as ox
 from datetime import datetime
-import psycopg2
 from datetime import timedelta
-import difflib
 import simplejson as json
-import json
-import time
 from flask_cors import CORS
 
 
@@ -17,9 +12,9 @@ CORS(app)
 
 app.secret_key = 'mliu'  # Set a secret key for session
 
-stops_df = pd.read_csv("data_files\stops.csv")
-trips_df = pd.read_csv("data_files\e_trips.csv")
-stop_times_df = pd.read_csv("data_files\stop_times.csv")
+stops_df = pd.read_csv("stops.csv")
+trips_df = pd.read_csv("e_trips.csv")
+stop_times_df = pd.read_csv("stop_times.csv")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
