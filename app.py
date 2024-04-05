@@ -12,9 +12,9 @@ CORS(app)
 
 app.secret_key = 'mliu'  # Set a secret key for session
 
-stops_df = pd.read_csv("stops.csv")
-trips_df = pd.read_csv("e_trips.csv")
-stop_times_df = pd.read_csv("stop_times.csv")
+stops_df = pd.read_csv("data_files/stops.csv")
+trips_df = pd.read_csv("data_files/e_trips.csv")
+stop_times_df = pd.read_csv("data_files/stop_times.csv")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
